@@ -7,7 +7,9 @@ API REST para gestão de reagentes de laboratório, fabricantes, localizações 
 | Integrante | RM |
 | --- | --- |
 | Alice Santos Bulhões | RM554499 |
-
+| Eduardo Oliveira Cardoso Madid | RM556349 |
+| Nicolas Haubricht Hainfellner | RM556259 |
+| Lucas Henzo Ide Yuki | RM554865 |
 
 ## ✅ Requisitos
 
@@ -216,4 +218,5 @@ Os principais DTOs expostos pela API:
 - Erro de versão do Java: confirme que o `java -version` é 21.
 - Portas ocupadas: ajuste `server.port` em `application.properties` (ex.: `server.port=8081`).
 - Datas/Enums inválidos: verifique o formato ISO-8601 e use os valores exatos de enum definidos no código.
+
 
