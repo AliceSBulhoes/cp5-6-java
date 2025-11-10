@@ -2,7 +2,7 @@
 
 API REST para gestão de reagentes de laboratório, fabricantes, localizações de estoque e movimentações. Projeto desenvolvido com Spring Boot 3.5.7 (Java 21) e banco H2 em memória.
 
-## 👥 Equipe (Nomes e RMs)
+## 👥 Equipe 
 
 | Integrante | RM |
 | --- | --- |
@@ -219,4 +219,4 @@ Os principais DTOs expostos pela API:
 - Portas ocupadas: ajuste `server.port` em `application.properties` (ex.: `server.port=8081`).
 - Datas/Enums inválidos: verifique o formato ISO-8601 e use os valores exatos de enum definidos no código.
 
-
+## [📜 Link para o GitHub](https://github.com/AliceSBulhoes/cp5-6-java/)
