@@ -1,0 +1,535 @@
+{
+  "info": {
+    "name": "Reagentes API Full CRUD",
+    "_postman_id": "072dec87-cdcc-44da-93ef-ea58f72082e9",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Fabricantes",
+      "item": [
+        {
+          "name": "Listar Fabricantes",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/fabricantes",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "",
+                "fabricantes"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Buscar Fabricante por ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/fabricantes/b7a8c406-8a4b-4651-9fc2-ba1a3cd7aa09",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "",
+                "fabricantes",
+                "b7a8c406-8a4b-4651-9fc2-ba1a3cd7aa09"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Criar Fabricante",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/fabricantes",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "",
+                "fabricantes"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"b7a8c406-8a4b-4651-9fc2-ba1a3cd7aa09\",\n  \"nomeOficial\": \"Roche Diagnostics International AG\",\n  \"nomeFantasia\": \"Roche\",\n  \"cnpj\": \"12345678000199\",\n  \"paisOrigem\": \"Suica\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Atualizar Fabricante",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/fabricantes/b7a8c406-8a4b-4651-9fc2-ba1a3cd7aa09",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "",
+                "fabricantes",
+                "b7a8c406-8a4b-4651-9fc2-ba1a3cd7aa09"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"b7a8c406-8a4b-4651-9fc2-ba1a3cd7aa09\",\n  \"nomeOficial\": \"Roche Diagnostics Updated\",\n  \"nomeFantasia\": \"Roche\",\n  \"cnpj\": \"12345678000199\",\n  \"paisOrigem\": \"Suica\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Remover Fabricante",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/fabricantes/b7a8c406-8a4b-4651-9fc2-ba1a3cd7aa09",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "",
+                "fabricantes",
+                "b7a8c406-8a4b-4651-9fc2-ba1a3cd7aa09"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Localizacoes",
+      "item": [
+        {
+          "name": "Listar Localizacoes",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/localizacoes",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "",
+                "localizacoes"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Buscar Localizacao por ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/localizacoes/d33bb0b8-ee69-4ca3-9f1b-aa4163a2a65b",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "",
+                "localizacoes",
+                "d33bb0b8-ee69-4ca3-9f1b-aa4163a2a65b"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Criar Localizacao",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/localizacoes",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "",
+                "localizacoes"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"d33bb0b8-ee69-4ca3-9f1b-aa4163a2a65b\",\n  \"codigoLocal\": \"REF-BQ-01\",\n  \"descricao\": \"Refrigerador 1 Bioquimica\",\n  \"tipo\": \"REFRIGERADOR\",\n  \"faixaTemperaturaNominal\": \"2C a 8C\",\n  \"setor\": \"Bioquimica\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Atualizar Localizacao",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/localizacoes/d33bb0b8-ee69-4ca3-9f1b-aa4163a2a65b",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "",
+                "localizacoes",
+                "d33bb0b8-ee69-4ca3-9f1b-aa4163a2a65b"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"d33bb0b8-ee69-4ca3-9f1b-aa4163a2a65b\",\n  \"codigoLocal\": \"REF-BQ-02\",\n  \"descricao\": \"Freezer principal\",\n  \"tipo\": \"FREEZER_MINUS20\",\n  \"faixaTemperaturaNominal\": \"-20C\",\n  \"setor\": \"Armazenamento\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Remover Localizacao",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/localizacoes/d33bb0b8-ee69-4ca3-9f1b-aa4163a2a65b",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "",
+                "localizacoes",
+                "d33bb0b8-ee69-4ca3-9f1b-aa4163a2a65b"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Reagentes",
+      "item": [
+        {
+          "name": "Listar Reagentes",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/reagentes",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "",
+                "reagentes"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Buscar Reagente por ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/reagentes/d244a200-723c-499a-8889-cb335c3a1dd3",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "",
+                "reagentes",
+                "d244a200-723c-499a-8889-cb335c3a1dd3"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Criar Reagente",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/reagentes",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "",
+                "reagentes"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"d244a200-723c-499a-8889-cb335c3a1dd3\",\n  \"nome\": \"Soro Controle Bioquimica Nivel 1\",\n  \"codigoSku\": \"SKU-90887-A1\",\n  \"lote\": \"BX-2025-09A\",\n  \"dataValidade\": \"2026-10-31\",\n  \"dataRecebimento\": \"2025-11-02\",\n  \"quantidadeEmEstoque\": 50,\n  \"status\": \"QUARENTENA\",\n  \"fabricante\": {\n    \"id\": \"b7a8c406-8a4b-4651-9fc2-ba1a3cd7aa09\",\n    \"nomeOficial\": \"Roche Diagnostics International AG\",\n    \"nomeFantasia\": \"Roche\",\n    \"cnpj\": \"12345678000199\",\n    \"paisOrigem\": \"Suica\"\n  },\n  \"localizacao\": {\n    \"id\": \"d33bb0b8-ee69-4ca3-9f1b-aa4163a2a65b\",\n    \"codigoLocal\": \"REF-BQ-01\",\n    \"descricao\": \"Refrigerador 1 Bioquimica\",\n    \"tipo\": \"REFRIGERADOR\",\n    \"faixaTemperaturaNominal\": \"2C a 8C\",\n    \"setor\": \"Bioquimica\"\n  },\n  \"movimentacoes\": []\n}"
+            }
+          }
+        },
+        {
+          "name": "Atualizar Reagente",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/reagentes/d244a200-723c-499a-8889-cb335c3a1dd3",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "",
+                "reagentes",
+                "d244a200-723c-499a-8889-cb335c3a1dd3"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"d244a200-723c-499a-8889-cb335c3a1dd3\",\n  \"nome\": \"Soro Controle Atualizado\",\n  \"codigoSku\": \"SKU-90887-A1\",\n  \"lote\": \"BX-2025-09B\",\n  \"dataValidade\": \"2026-12-31\",\n  \"dataRecebimento\": \"2025-11-05\",\n  \"quantidadeEmEstoque\": 60,\n  \"status\": \"LIBERADO\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Remover Reagente",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/reagentes/d244a200-723c-499a-8889-cb335c3a1dd3",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "",
+                "reagentes",
+                "d244a200-723c-499a-8889-cb335c3a1dd3"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Movimentacoes",
+      "item": [
+        {
+          "name": "Listar Movimentacoes",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/movimentacoes",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "",
+                "movimentacoes"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Buscar Movimentacao por ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/movimentacoes/73504b17-9321-4c08-88f4-7eadceb16c5b",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "",
+                "movimentacoes",
+                "73504b17-9321-4c08-88f4-7eadceb16c5b"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Criar Movimentacao Vinculada",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/movimentacoes/reagente/d244a200-723c-499a-8889-cb335c3a1dd3",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "",
+                "movimentacoes",
+                "reagente",
+                "d244a200-723c-499a-8889-cb335c3a1dd3"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"73504b17-9321-4c08-88f4-7eadceb16c5b\",\n  \"tipo\": \"ENTRADA_NOTA\",\n  \"quantidadeMovimentada\": 100,\n  \"observacao\": \"Recebimento NF 12345\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Atualizar Movimentacao",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/movimentacoes/73504b17-9321-4c08-88f4-7eadceb16c5b",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "",
+                "movimentacoes",
+                "73504b17-9321-4c08-88f4-7eadceb16c5b"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"73504b17-9321-4c08-88f4-7eadceb16c5b\",\n  \"tipo\": \"SAIDA_USO_ANALISADOR\",\n  \"quantidadeMovimentada\": -20,\n  \"observacao\": \"Uso em rotina diaria\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Remover Movimentacao",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/movimentacoes/73504b17-9321-4c08-88f4-7eadceb16c5b",
+              "protocol": "http",
+              "host": [
+                "localhost:8080"
+              ],
+              "path": [
+                "",
+                "movimentacoes",
+                "73504b17-9321-4c08-88f4-7eadceb16c5b"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
